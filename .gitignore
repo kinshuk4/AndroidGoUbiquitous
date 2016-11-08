@@ -41,3 +41,7 @@ project.properties
 ##Gradle-based build
 .gradle
 build/
+
+wear/gradle/wrapper/gradle-wrapper.jar
+
+wear/gradle/wrapper/gradle-wrapper.properties
