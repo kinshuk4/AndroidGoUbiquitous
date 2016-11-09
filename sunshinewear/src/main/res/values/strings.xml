@@ -2,4 +2,7 @@
     <string name="app_name">SunshineWear</string>
     <string name="message">Watch face tapped</string>
     <string name="my_digital_name">Sunshine Wear</string>
+    <string name="info_not_available">Info not available!</string>
+    <string name="my_analog_name">Sunshine Analog</string>
+    <string name="time_format_string" formatted="false">%02d:%02d</string>
 </resources>
