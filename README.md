@@ -14,6 +14,10 @@ Pre-requisites
 - Sender ID for GCM in app:strings.xml
 - If running on wear emulator, try to use wear with API 23.
 
+References
+----------
+- Help taken from stackoverflow and blogs like https://catinean.com/2015/03/28/creating-a-watch-face-with-android-wear-api-part-2/
+
 Getting Started
 ---------------
 This sample uses the Gradle build system.  To build this project, use the
