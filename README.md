@@ -8,17 +8,11 @@ MyOpenWeatherMapApiKey="YOUR API KEY"
 
 Pre-requisites
 --------------
-Android SDK 21 or Higher
-Build Tools version 21.1.2
-Android Support AppCompat 22.2.0
-Android Support Annotations 22.2.0
-Android Support GridLayout 22.2.0
-Android Support CardView 22.2.0
-Android Support Design 22.2.0
-Android Support RecyclerView 22.2.0
-Google Play Services GCM 7.0.0
-BumpTech Glide 3.5.2
-
+- Android SDK 21 or Higher for app
+- Android SDK 23 for wear
+- Update MyOpenWeatherMapApiKey in gradle.properties
+- Sender ID for GCM in app:strings.xml
+- If running on wear emulator, try to use wear with API 23.
 
 Getting Started
 ---------------
