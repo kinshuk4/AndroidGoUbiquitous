@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.sunshinewear;
+package com.example.android.sunshine.app;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -39,8 +39,8 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.WindowInsets;
 
-import com.example.sunshinewear.utils.PaintUtil;
-import com.example.sunshinewear.utils.WeatherUtil;
+import com.example.android.utils.PaintUtil;
+import com.example.android.utils.WeatherUtil;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
@@ -63,7 +63,7 @@ import static com.example.common.Constants.KEY_HIGH_TEMP;
 import static com.example.common.Constants.KEY_WEATHER_ID;
 import static com.example.common.Constants.KEY_LOW_TEMP;
 import static com.example.common.Constants.WEATHER_PATH;
-
+import com.example.android.sunshine.app.R;
 /**
  * Digital watch face with seconds. In ambient mode, the seconds aren't displayed. On devices with
  * low-bit ambient mode, the text is drawn without anti-aliasing in ambient mode.
@@ -386,10 +386,11 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
          */
         @Override
         public void onDataChanged(DataEventBuffer dataEventBuffer) {
+            Log.d(LOG_TAG,"onDataChanged()");
             for (DataEvent dataEvent : dataEventBuffer) {
                 if (dataEvent.getType() == DataEvent.TYPE_CHANGED) {
                     DataItem dataItem = dataEvent.getDataItem();
-                    if (dataItem.getUri().getPath().compareTo(WEATHER_PATH) == 0) {
+                    if (WEATHER_PATH.equals(dataItem.getUri().getPath())) {
                         DataMap dataMap = DataMapItem.fromDataItem(dataItem).getDataMap();
                         mHighTemp = dataMap.getString(KEY_HIGH_TEMP);
                         mLowTemp = dataMap.getString(KEY_LOW_TEMP);

@@ -1,10 +1,9 @@
-package com.example.sunshinewear.utils;
+package com.example.android.utils;
 
 
 import android.content.res.Resources;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import com.example.sunshinewear.R;
 
 // Helper class to initialize paint objects
 public class PaintUtil {

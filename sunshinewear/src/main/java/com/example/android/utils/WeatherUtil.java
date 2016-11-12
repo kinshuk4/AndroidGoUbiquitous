@@ -1,6 +1,6 @@
-package com.example.sunshinewear.utils;
+package com.example.android.utils;
 
-import com.example.sunshinewear.R;
+import com.example.android.sunshine.app.R;
 
 public class WeatherUtil {
 
