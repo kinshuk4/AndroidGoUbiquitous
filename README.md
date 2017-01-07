@@ -1,10 +1,17 @@
-Advanced Android Sample App
-===================================
-
+#  Sunshine Wear App
 Synchronizes weather information from OpenWeatherMap on Android Phones and Tablets. Used in the Udacity Advanced Android course.
 
+## Features
+
+- App works on both round and square face watches.
+- App displays the current time.
+- App displays the high and low temperatures.
+- App displays a graphic that summarizes the day’s weather (e.g., a sunny image, rainy image, cloudy image, etc.).
+
+## Getting Started
 To start using the project just add the following line to gradle.properties file
 MyOpenWeatherMapApiKey="YOUR API KEY"
+This sample uses the Gradle build system.  To build this project, use the "gradlew build" command or use "Import Project" in Android Studio.
 
 Pre-requisites
 --------------
@@ -14,18 +21,22 @@ Pre-requisites
 - Sender ID for GCM in app:strings.xml
 - If running on wear emulator, try to use wear with API 23.
 
+Screenshots
+-----------
+![Round Dial](screenshots/screen.png)
+
+##Libraries
+
+- Android Design Support
+- Glide
+- RecyclerView v7
+- ButterKnife
+- wearable
+
 References
 ----------
 - Help taken from stackoverflow and blogs like https://catinean.com/2015/03/28/creating-a-watch-face-with-android-wear-api-part-2/
 
-Getting Started
----------------
-This sample uses the Gradle build system.  To build this project, use the
-"gradlew build" command or use "Import Project" in Android Studio.
-
-Screenshots
------------
-![Round Dial](screenshots/screen.png)
 
 Support
 -------
